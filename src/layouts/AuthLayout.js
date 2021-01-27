@@ -15,18 +15,18 @@ class AuthLayout extends Component {
     document.body.classList.remove("bg-default");
   }
   render() {
-    const Component = this.props.component;
+    let Component = this.props.component;
 
     return (
       <>
         <div className="main-content">
           <AuthNavbar />
           <AuthHeader />
-          <Container className="mt--8 pb-5">
+          {/* <Container className="mt--8 pb-5">
             <Row className="justify-content-center">
               <Component />
             </Row>
-          </Container>
+          </Container> */}
         </div>
         <AuthFooter />
       </>
