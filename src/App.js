@@ -9,10 +9,16 @@ import "./assets/plugins/nucleo/css/nucleo.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./assets/css/argon-dashboard-react.css";
 
+// User Comp
+import UserNavbar from "./components/Navbars/UserNavbar";
+import UserLayout from "./layouts/UserLayout";
+
 const App = () => {
   return (
     <Router>
-      <AuthLayout component={Login} />
+      <div style={{ backgroundColor: "darkblue" }}>
+        <UserLayout />
+      </div>
     </Router>
   );
 };
