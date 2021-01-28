@@ -38,13 +38,46 @@ class UserNavbar extends Component {
                 </InputGroup>
               </FormGroup>
             </Form>
-            <UncontrolledDropdown nav>
-<DropdownToggle className = "pr-0" nav>
-    <Media className= " align-items-center">
-
-    </Media>
-</DropdownToggle>
-            </UncontrolledDropdown>
+            <Nav>
+              <UncontrolledDropdown nav>
+                <DropdownToggle className="pr-0" nav>
+                  <Media className="align-items-center">
+                    <span className="avatar avatar-sm rounded-circle">
+                      <img
+                        src={
+                          require("../../assets/img/theme/team-1-800x800.jpg")
+                            .default
+                        }
+                        alt="User"
+                      />
+                    </span>
+                    <Media className="ml-2 d-none d-lg-block">
+                      <span className="mb-0 text-sm font-weight-bold">
+                        User Name
+                      </span>
+                    </Media>
+                  </Media>
+                </DropdownToggle>
+                <DropdownMenu className="dropdown-menu-arrow" right>
+                  <DropdownItem className="noti-title" header tag="div">
+                    <h6 className="text-overflow m-0">Welcome !</h6>
+                  </DropdownItem>
+                  <DropdownItem to="/profile" tag={Link}>
+                    <i className="ni ni-single-02" />
+                    <span>My Profile</span>
+                  </DropdownItem>
+                  <DropdownItem divider />
+                  <DropdownItem
+                    onClick={() => {
+                      console.log("Logout");
+                    }}
+                  >
+                    <i className="ni ni-user-run" />
+                    <span> Logout</span>
+                  </DropdownItem>
+                </DropdownMenu>
+              </UncontrolledDropdown>
+            </Nav>
           </Container>
         </Navbar>
       </>
