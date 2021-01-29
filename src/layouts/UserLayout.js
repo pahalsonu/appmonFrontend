@@ -43,39 +43,42 @@ class UserLayout extends Component {
           <UserNavbar />
 
           <UserHeader
+            heading={true}
+            mainHeading={"Hello Admin"}
+            headingDesc={"Please click on a row to view/update the details"}
             checkType="edit"
-            cards={[
-              {
-                cardTitle: "Total Checks",
-                data: "350",
-                iconBg: "gradient-red",
-                icon: "ni ni-active-40",
-                cardFooterColor: "text-success",
-                statIndicator: "fa fa-plus",
-                cardFooterData: "5 New Checks",
-                since: "Since Last Month",
-              },
-              {
-                cardTitle: "Total Checks",
-                data: "350",
-                iconBg: "gradient-red",
-                icon: "ni ni-active-40",
-                cardFooterColor: "text-success",
-                statIndicator: "fa fa-plus",
-                cardFooterData: "5 New Checks",
-                since: "Since Last Month",
-              },
-              {
-                cardTitle: "Total Checks",
-                data: "350",
-                iconBg: "gradient-red",
-                icon: "ni ni-active-40",
-                cardFooterColor: "text-success",
-                statIndicator: "fa fa-plus",
-                cardFooterData: "5 New Checks",
-                since: "Since Last Month",
-              },
-            ]}
+            // cards={[
+            //   {
+            //     cardTitle: "Total Checks",
+            //     data: "350",
+            //     iconBg: "gradient-red",
+            //     icon: "ni ni-active-40",
+            //     cardFooterColor: "text-success",
+            //     statIndicator: "fa fa-plus",
+            //     cardFooterData: "5 New Checks",
+            //     since: "Since Last Month",
+            //   },
+            //   {
+            //     cardTitle: "Total Checks",
+            //     data: "350",
+            //     iconBg: "gradient-red",
+            //     icon: "ni ni-active-40",
+            //     cardFooterColor: "text-success",
+            //     statIndicator: "fa fa-plus",
+            //     cardFooterData: "5 New Checks",
+            //     since: "Since Last Month",
+            //   },
+            //   {
+            //     cardTitle: "Total Checks",
+            //     data: "350",
+            //     iconBg: "gradient-red",
+            //     icon: "ni ni-active-40",
+            //     cardFooterColor: "text-success",
+            //     statIndicator: "fa fa-plus",
+            //     cardFooterData: "5 New Checks",
+            //     since: "Since Last Month",
+            //   },
+            // ]}
           />
         </div>
       </>

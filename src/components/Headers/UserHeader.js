@@ -399,6 +399,20 @@ class UserHeader extends Component {
                   </Col>
                 ))}
             </Row>
+            <Row className="pb-2">
+              {this.props.heading &&
+                this.props.mainHeading &&
+                this.props.headingDesc && (
+                  <>
+                    <Col lg="12" md="10">
+                      <h2 className="display-3 text-white">
+                        {this.props.mainHeading}
+                      </h2>
+                      <p className="text-white">{this.props.headingDesc}</p>
+                    </Col>
+                  </>
+                )}
+            </Row>
           </div>
         </Container>
       </div>
