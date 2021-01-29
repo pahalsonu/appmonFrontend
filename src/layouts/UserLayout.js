@@ -42,7 +42,41 @@ class UserLayout extends Component {
         <div className="main-content" ref="mainContent">
           <UserNavbar />
 
-          <UserHeader checkType="edit" />
+          <UserHeader
+            checkType="edit"
+            cards={[
+              {
+                cardTitle: "Total Checks",
+                data: "350",
+                iconBg: "gradient-red",
+                icon: "ni ni-active-40",
+                cardFooterColor: "text-success",
+                statIndicator: "fa fa-plus",
+                cardFooterData: "5 New Checks",
+                since: "Since Last Month",
+              },
+              {
+                cardTitle: "Total Checks",
+                data: "350",
+                iconBg: "gradient-red",
+                icon: "ni ni-active-40",
+                cardFooterColor: "text-success",
+                statIndicator: "fa fa-plus",
+                cardFooterData: "5 New Checks",
+                since: "Since Last Month",
+              },
+              {
+                cardTitle: "Total Checks",
+                data: "350",
+                iconBg: "gradient-red",
+                icon: "ni ni-active-40",
+                cardFooterColor: "text-success",
+                statIndicator: "fa fa-plus",
+                cardFooterData: "5 New Checks",
+                since: "Since Last Month",
+              },
+            ]}
+          />
         </div>
       </>
     );
