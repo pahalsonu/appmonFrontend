@@ -1,8 +1,9 @@
 import React, { Component } from "react";
-
+import { Container } from "reactstrap";
 import UserNavbar from "../components/Navbars/UserNavbar";
 import Sidebar from "../components/Sidebar/Sidebar";
 import UserHeader from "../components/Headers/UserHeader";
+import UserFooter from "../components/Footers/UserFooter";
 
 class UserLayout extends Component {
   render() {
@@ -80,6 +81,7 @@ class UserLayout extends Component {
             //   },
             // ]}
           />
+          <UserFooter />
         </div>
       </>
     );
