@@ -180,15 +180,15 @@ class Sidebar extends Component {
             <hr className="my-3" />
             <h6 className="navbar-heading text-muted">Documentation</h6>
             <Nav className="mb-md-3" navbar>
-              <NavItem className="active-pro active">
-                <NavLink to="/upgrade" tag={NavLinkRRD}>
-                  <i className="ni ni-send text-dark" />
-                  Upgrade to Pro
+              <NavItem>
+                <NavLink to="/docs" tag={NavLinkRRD}>
+                  <i className="ni ni-single-copy-04 text-default" />
+                  Docs
                 </NavLink>
               </NavItem>
               <NavItem className="active-pro active">
-                <NavLink to="/docs" tag={NavLinkRRD}>
-                  <i className="ni ni-single-copy-04 text-default" />
+                <NavLink to="/upgrade" tag={NavLinkRRD}>
+                  <i className="ni ni-send text-dark" />
                   Upgrade to Pro
                 </NavLink>
               </NavItem>

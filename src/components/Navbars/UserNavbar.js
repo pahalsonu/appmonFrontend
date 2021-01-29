@@ -38,7 +38,7 @@ class UserNavbar extends Component {
                 </InputGroup>
               </FormGroup>
             </Form>
-            <Nav>
+            <Nav className="align-item-center d-none d-md-flex">
               <UncontrolledDropdown nav>
                 <DropdownToggle className="pr-0" nav>
                   <Media className="align-items-center">
