@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container } from "reactstrap";
+
 import UserNavbar from "../components/Navbars/UserNavbar";
 import Sidebar from "../components/Sidebar/Sidebar";
 import UserHeader from "../components/Headers/UserHeader";
@@ -7,6 +7,7 @@ import UserFooter from "../components/Footers/UserFooter";
 
 class UserLayout extends Component {
   render() {
+    const { Component } = this.props;
     return (
       <>
         <Sidebar
@@ -43,44 +44,8 @@ class UserLayout extends Component {
         <div className="main-content" ref="mainContent">
           <UserNavbar />
 
-          <UserHeader
-            heading={true}
-            mainHeading={"Hello Admin"}
-            headingDesc={"Please click on a row to view/update the details"}
-            checkType="edit"
-            // cards={[
-            //   {
-            //     cardTitle: "Total Checks",
-            //     data: "350",
-            //     iconBg: "gradient-red",
-            //     icon: "ni ni-active-40",
-            //     cardFooterColor: "text-success",
-            //     statIndicator: "fa fa-plus",
-            //     cardFooterData: "5 New Checks",
-            //     since: "Since Last Month",
-            //   },
-            //   {
-            //     cardTitle: "Total Checks",
-            //     data: "350",
-            //     iconBg: "gradient-red",
-            //     icon: "ni ni-active-40",
-            //     cardFooterColor: "text-success",
-            //     statIndicator: "fa fa-plus",
-            //     cardFooterData: "5 New Checks",
-            //     since: "Since Last Month",
-            //   },
-            //   {
-            //     cardTitle: "Total Checks",
-            //     data: "350",
-            //     iconBg: "gradient-red",
-            //     icon: "ni ni-active-40",
-            //     cardFooterColor: "text-success",
-            //     statIndicator: "fa fa-plus",
-            //     cardFooterData: "5 New Checks",
-            //     since: "Since Last Month",
-            //   },
-            // ]}
-          />
+          <UserHeader {...this.props} />
+          <Component />
           <UserFooter />
         </div>
       </>
