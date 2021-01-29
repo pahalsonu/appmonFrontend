@@ -30,7 +30,6 @@ import {
   Row,
   Col,
 } from "reactstrap";
-var ps;
 
 import Logo from "../../assets/img/brand/newLogo.png";
 
@@ -75,7 +74,7 @@ class Sidebar extends Component {
     const { routes } = this.props;
     return (
       <Navbar
-        className="navbar-verticle fixed-left navbar-light bg-white"
+        className="navbar-vertical fixed-left navbar-light bg-white"
         expand="md"
         id="sidenav-main"
       >
