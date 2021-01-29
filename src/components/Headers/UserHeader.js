@@ -361,6 +361,43 @@ class UserHeader extends Component {
                 </>
               )}
             </Row>
+            <Row>
+              {this.props.cards.map((ele) => (
+                <Col lg="6" xl="4">
+                  <Card className="card-stats mb-4 mb-xl-0">
+                    <CardBody>
+                      <Row>
+                        <Col>
+                          <CardTitle
+                            tag="h5"
+                            className="text-uppercase text-muted mb-0"
+                          >
+                            {ele.cardTitle}
+                          </CardTitle>
+                          <span className="h2 font-weight-bold mb-0">
+                            {ele.data}
+                          </span>
+                        </Col>
+                        <Col className="col-auto">
+                          <div
+                            className={`icon icon-shape ${ele.iconBg} text-white rounded-circle shadow`}
+                          >
+                            <i className={`${ele.icon}`} />
+                          </div>
+                        </Col>
+                      </Row>
+                      <p className="mt-3 mb-0 text-muted text-sm">
+                        <span className={`${ele.cardFooterColor} mr-2`}>
+                          <i className={ele.statIndicator} />
+                          {ele.cardFooterData}
+                        </span>
+                        <span className="text-nowrap">{ele.since}</span>
+                      </p>
+                    </CardBody>
+                  </Card>
+                </Col>
+              ))}
+            </Row>
           </div>
         </Container>
       </div>
