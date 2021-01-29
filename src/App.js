@@ -16,7 +16,7 @@ import UserLayout from "./layouts/UserLayout";
 const App = () => {
   return (
     <Router>
-      <div style={{ backgroundColor: "darkblue" }}>
+      <div>
         <UserLayout />
       </div>
     </Router>

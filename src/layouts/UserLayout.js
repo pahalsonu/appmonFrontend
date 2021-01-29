@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import UserNavbar from "../components/Navbars/UserNavbar";
 import Sidebar from "../components/Sidebar/Sidebar";
 import UserHeader from "../components/Headers/UserHeader";
+import { Container } from "reactstrap";
 
 class UserLayout extends Component {
   render() {
@@ -41,7 +42,8 @@ class UserLayout extends Component {
         />
         <div className="main-content" ref="mainContent">
           <UserNavbar />
-          <UserHeader />
+
+          <UserHeader checkType="edit" />
         </div>
       </>
     );
