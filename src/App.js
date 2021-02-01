@@ -7,12 +7,16 @@ import "./assets/css/argon-dashboard-react.css";
 
 import { BrowserRouter as Router } from "react-router-dom";
 import UserNavbar from "./component/Navbars/UserNavbar"
+import Sidebar from "./component/Sideabar/Sidebar"
+
+
 const App = () => {
   return (
 
     <>
-    <Router>
-      <UserNavbar />
+      <Router>
+        <Sidebar />
+        <UserNavbar />
       </Router>
     </>
 
