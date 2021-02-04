@@ -2,7 +2,7 @@ import React, { Component } from "react";
 
 import UserNavbar from "../component/Navbars/UserNavbar";
 import Sidebar from "../component/Sideabar/Sidebar";
-
+import UserHeader from "../component/Headers/UserHeaders";
 
 
 class UserLayout extends Component {
@@ -43,7 +43,7 @@ class UserLayout extends Component {
         />
         <div className="main-content" ref="mainContent">
           <UserNavbar />
-
+          <UserHeader {...this.props} />
       
          
         </div>
