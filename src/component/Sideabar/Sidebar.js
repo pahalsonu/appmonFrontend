@@ -66,7 +66,7 @@ class Sidebar extends Component {
         const { routes } = this.props;
         return (
             <Navbar
-                className="navbar-vertical  navbar-light bg-info"
+                className="navbar-vertical  navbar-light "
                 expand="md"
                 id="sidenav-main"
             >
@@ -140,6 +140,59 @@ class Sidebar extends Component {
                         </UncontrolledDropdown>
 
                     </Nav>
+                    <Collapse navbar isOpen={this.state.collapseOpen}>
+                        <div className="navbar-collapse-header">
+                            <Row>
+                                <Col className="collapse-brand" xs="6">
+                                    <Link to="/">
+                                        <img alt="Appmon Logo" src={Logo} />
+                                    </Link>
+                                </Col>
+                                <Col className="collapse-close" xs="6">
+                                    <button
+                                        className="navbar-toggler "
+                                        type="button"
+                                        onClick={this.toggleCollapse}
+                                    >
+                                        <span />
+                                        <span />
+                                    </button>
+                                </Col>
+                            </Row>
+                        </div>
+                        <Form className="mt-4 mb-3 d-md-none">
+                            <InputGroup className="input-group-rounded input-group-merge">
+                                <Input
+                                    aria-label="Search"
+                                    className="form-control-rounded form-control-prepend"
+                                    placeholder="Search"
+                                    type="search"
+                                />
+                                <InputGroupAddon addonType="prepend">
+                                    <InputGroupText>
+                                        <span className="fa fa-search" />
+                                    </InputGroupText>
+                                </InputGroupAddon>
+                            </InputGroup>
+                        </Form>
+                        <Nav navbar>{this.createLinks(routes)}</Nav>
+                        <hr className="my-3" />
+                        <h6 className="navbar-heading text-muted">Documentation</h6>
+                        <Nav className="mb-md-3" navbar>
+                            <NavItem>
+                                <NavLink to="/docs" tag={NavLinkRRD}>
+                                    <i className="ni ni-single-copy-04 text-default" />
+                  Docs
+                </NavLink>
+                            </NavItem>
+                            <NavItem className="active-pro active">
+                                <NavLink to="/upgrade" tag={NavLinkRRD}>
+                                    <i className="ni ni-send text-dark" />
+                  Upgrade to Pro
+                </NavLink>
+                            </NavItem>
+                        </Nav>
+                    </Collapse>
                 </Container>
 
             </Navbar>
