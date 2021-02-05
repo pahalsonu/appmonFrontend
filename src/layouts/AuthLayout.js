@@ -4,8 +4,8 @@ import { Row, Container } from "reactstrap";
 
 // Reusable Components
 import AuthNavbar from "../components/Navbars/AuthNavbar";
-import AuthHeader from "../components/Headers/AuthHeader";
-import AuthFooter from "../components/Footers/AuthFooter";
+import AuthHeader from "../components/Headers/AuthHeaders";
+import AuthFooter from "../components/Footers/AuthFooters";
 
 class AuthLayout extends Component {
   componentDidMount() {

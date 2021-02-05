@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 
-import UserNavbar from "../component/Navbars/UserNavbar";
-import Sidebar from "../component/Sideabar/Sidebar";
-import UserHeader from "../component/Headers/UserHeaders";
-import UserFooter from "../component/Footers/UserFooter";
+import UserNavbar from "../components/Navbars/UserNavbar";
+import Sidebar from "../components/Sideabar/Sidebar";
+import UserHeader from "../components/Headers/UserHeaders";
+import UserFooter from "../components/Footers/UserFooter";
 
 class UserLayout extends Component {
   render() {
