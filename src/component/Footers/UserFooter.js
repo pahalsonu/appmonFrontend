@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { NavLink as NavLinkRRD } from "react-router-dom";
 import { Row, Col, Container, Nav, NavItem, NavLink } from "reactstrap";
 
-class UserFooter extends Component {
+export default class UserFooter extends Component {
   render() {
     return (
       <footer>
@@ -12,12 +12,12 @@ class UserFooter extends Component {
               <div className="copyright text-center text-xl-left text-muted">
                 © 2021{" "}
                 <a
-                  className="font-weight-bold ml-1"
-                  href="https://appmon1.herokuapp.com"
-                  rel="noreferrer"
+                  className="font-eight-bold ml-1"
+                  href="appmon.com"
+                  rel="noopener noreferrer"
                   target="_blank"
                 >
-                  Appmon
+                  AppMon
                 </a>
               </div>
             </Col>
@@ -30,7 +30,7 @@ class UserFooter extends Component {
                 </NavItem>
                 <NavItem>
                   <NavLink to="/dashboard" tag={NavLinkRRD}>
-                    Term & Conditions
+                    Terms & Conditions
                   </NavLink>
                 </NavItem>
               </Nav>
@@ -41,5 +41,3 @@ class UserFooter extends Component {
     );
   }
 }
-
-export default UserFooter;

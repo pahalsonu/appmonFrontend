@@ -3,11 +3,11 @@ import React, { Component } from "react";
 import UserNavbar from "../component/Navbars/UserNavbar";
 import Sidebar from "../component/Sideabar/Sidebar";
 import UserHeader from "../component/Headers/UserHeaders";
-
+import UserFooter from "../component/Footers/UserFooter";
 
 class UserLayout extends Component {
   render() {
-   
+    const Component = this.props.component
     return (
       <>
         <Sidebar
@@ -44,8 +44,11 @@ class UserLayout extends Component {
         <div className="main-content" ref="mainContent">
           <UserNavbar />
           <UserHeader {...this.props} />
-      
-         
+          <Component
+            {...this.props}
+          />
+          <UserFooter />
+
         </div>
       </>
     );
