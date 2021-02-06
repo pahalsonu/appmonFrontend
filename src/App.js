@@ -5,10 +5,7 @@ import "./assets/plugins/nucleo/css/nucleo.css";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "./assets/css/argon-dashboard-react.css";
 
-
-import AuthNavbar from "./components/Navbars/AuthNavbars"
-import AuthHeader from "./components/Headers/AuthHeader"
-
+import AuthLayout from "../src/layouts/AuthLayout"
 
 const App = () => {
   return (
@@ -16,8 +13,7 @@ const App = () => {
     <Router> <Switch>
 
       <Route >
-        <AuthNavbar />
-        <AuthHeader />
+        <AuthLayout/>
       </Route>
 
     </Switch></Router>
