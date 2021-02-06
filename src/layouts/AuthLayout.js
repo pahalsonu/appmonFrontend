@@ -5,7 +5,7 @@ import React, { Component } from 'react'
 // Reusable Components
 import AuthNavbar from "../components/Navbars/AuthNavbars";
 import AuthHeader from "../components/Headers/AuthHeader";
-
+import AuthFooter from "../components/Footers/AuthFooter"
 
 
 export class AuthLayout extends Component {
@@ -23,6 +23,7 @@ export class AuthLayout extends Component {
                 <div className="main-content">
                 <AuthNavbar />
                 <AuthHeader showHeader={this.props.showHeader} />
+                <AuthFooter />
                 </div>
             </>
         )
