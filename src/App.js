@@ -7,6 +7,7 @@ import "./assets/css/argon-dashboard-react.css";
 
 
 import AuthNavbar from "./components/Navbars/AuthNavbars"
+import AuthHeader from "./components/Headers/AuthHeader"
 
 
 const App = () => {
@@ -16,6 +17,7 @@ const App = () => {
 
       <Route >
         <AuthNavbar />
+        <AuthHeader />
       </Route>
 
     </Switch></Router>

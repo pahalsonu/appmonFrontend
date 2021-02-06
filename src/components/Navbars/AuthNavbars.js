@@ -16,7 +16,7 @@ export class AuthNavbars extends Component {
     render() {
         return (
             <>
-                <Navbar expand="md" className="navbar-top bg-info navbar-horizontal navbar-dark">
+                <Navbar expand="md" className="navbar-top navbar-horizontal bg-primary navbar-dark">
                     <Container className="px-4">
                         <NavbarBrand tag={Link} to="/">
                             <span className="nav-link navbar-light navbar-text text-white bold">
