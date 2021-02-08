@@ -23,6 +23,7 @@ export class AuthLayout extends Component {
                 <div className="main-content">
                 <AuthNavbar />
                 <AuthHeader showHeader={this.props.showHeader} />
+                <Component/>
                 <AuthFooter />
                 </div>
             </>
